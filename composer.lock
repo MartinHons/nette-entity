@@ -703,16 +703,16 @@
         },
         {
             "name": "martinhons/coding-standard",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MartinHons/coding-standard.git",
-                "reference": "21b53adb609c5d8d24d65485179fe32c20fb19c7"
+                "reference": "49b57e787a22fdc317c0ca5070bbc684a4fee217"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MartinHons/coding-standard/zipball/21b53adb609c5d8d24d65485179fe32c20fb19c7",
-                "reference": "21b53adb609c5d8d24d65485179fe32c20fb19c7",
+                "url": "https://api.github.com/repos/MartinHons/coding-standard/zipball/49b57e787a22fdc317c0ca5070bbc684a4fee217",
+                "reference": "49b57e787a22fdc317c0ca5070bbc684a4fee217",
                 "shasum": ""
             },
             "require": {
@@ -728,9 +728,9 @@
             "description": "Coding standard for all my PHP code. Based on slevomat/coding-standard.",
             "support": {
                 "issues": "https://github.com/MartinHons/coding-standard/issues",
-                "source": "https://github.com/MartinHons/coding-standard/tree/1.0.2"
+                "source": "https://github.com/MartinHons/coding-standard/tree/1.0.3"
             },
-            "time": "2025-11-17T16:21:06+00:00"
+            "time": "2025-11-19T20:37:00+00:00"
         },
         {
             "name": "myclabs/deep-copy",
