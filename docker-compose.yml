@@ -1,0 +1,29 @@
+name: entity
+
+services:
+  php:
+    build: .docker
+    env_file:
+      - .env
+    volumes:
+      - .:/app:Z
+    command: sleep infinity
+    depends_on:
+      - db
+    networks:
+      - entity_network
+
+  db:
+    image: mariadb:latest
+    container_name: ${MARIADB_HOST}
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "3306:3306"
+    networks:
+      - entity_network
+
+networks:
+  entity_network:
+    name: entity_network
