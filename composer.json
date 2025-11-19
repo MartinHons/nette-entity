@@ -18,11 +18,18 @@
     },
     "require-dev": {
         "phpstan/phpstan": "^2.1",
-        "martinhons/coding-standard": "^1.0"
+        "martinhons/coding-standard": "^1.0",
+        "nette/bootstrap": "^3.2",
+        "phpunit/phpunit": "^12.4"
     },
     "autoload": {
         "psr-4": {
             "MartinHons\\NetteEntity\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
         }
     },
 	"scripts": {
