@@ -6,7 +6,7 @@ namespace MartinHons\NetteEntity\Metadata\Reflection;
 
 use Exception;
 use MartinHons\NetteEntity\Entity\Entity;
-use MartinHons\NetteEntity\Entity\Metadata\PropertyMetadata;
+use MartinHons\NetteEntity\Metadata\PropertyMetadata;
 use ReflectionClass;
 use ReflectionIntersectionType;
 use ReflectionProperty;

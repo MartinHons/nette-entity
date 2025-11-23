@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace MartinHons\NetteEntity\Repository;
 
 use MartinHons\NetteEntity\Entity\Entity;
-use MartinHons\NetteEntity\Entity\Metadata\EntityMetadata;
+use MartinHons\NetteEntity\Metadata\EntityMetadata;
 use Nette\Database\Explorer;
 
 /**

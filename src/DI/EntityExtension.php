@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace MartinHons\NetteEntity\DI;
 
 use MartinHons\NetteEntity\Entity\Entity;
-use MartinHons\NetteEntity\Entity\Metadata\EntityMetadataFactory;
+use MartinHons\NetteEntity\Entity\EntityMetadataFactory;
 use MartinHons\NetteEntity\Repository\IRepository;
 use Nette\DI\CompilerExtension;
 use Nette\DI\Definitions\ServiceDefinition;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MartinHons\NetteEntity\Entity\Metadata;
+namespace MartinHons\NetteEntity\Metadata;
 
 use MartinHons\NetteEntity\Entity\Entity;
 
