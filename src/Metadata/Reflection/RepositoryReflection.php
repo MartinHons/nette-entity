@@ -33,10 +33,17 @@ class RepositoryReflection
             if (class_exists($class) && is_subclass_of($class, Entity::class)) {
                 return $class;
             }
-            throw new LogicException(sprintf('Class "%s" is not subclass of "%s"', $class, Entity::class));
+            throw new LogicException(
+                sprintf('Class "%s" is not subclass of "%s"', $class, Entity::class)
+            );
         }
 
-        throw new LogicException(sprintf('Repository "%s" does not have @extends PHPDoc annotation.', $this->repositoryRef->getName()));
+        throw new LogicException(
+            sprintf(
+                'Repository "%s" does not have @extends PHPDoc annotation.',
+                $this->repositoryRef->getName()
+            )
+        );
     }
 
 

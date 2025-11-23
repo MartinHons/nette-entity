@@ -7,7 +7,6 @@ namespace MartinHons\NetteEntity\Metadata\Reflection;
 use Exception;
 use MartinHons\NetteEntity\Entity\Entity;
 use MartinHons\NetteEntity\Entity\Mapping\Table;
-use MartinHons\NetteEntity\Entity\Metadata\PropertyMetadata;
 use ReflectionAttribute;
 use ReflectionClass;
 
@@ -17,11 +16,10 @@ class EntityReflection
     private ReflectionClass $entityReflection;
 
 
-    /** @param class-string<Entity> $repositoryClass */
-    public function __construct(
-        string $repositoryClass
-    ) {
-        $this->entityReflection = new ReflectionClass($repositoryClass);
+    /** @param class-string<Entity> $entityClass */
+    public function __construct(string $entityClass)
+    {
+        $this->entityReflection = new ReflectionClass($entityClass);
     }
 
 
@@ -47,18 +45,5 @@ class EntityReflection
         }
 
         return $tableName;
-    }
-
-
-    /** @return PropertyMetadata[] */
-    public function getProperties(): array
-    {
-        $properties = [];
-        foreach ($this->entityReflection->getProperties() as $propertyReflection) {
-            $propertyReflection = new PropertyReflection($propertyReflection);
-            $property = $propertyReflection->getProperty();
-            $properties[$property->name] = $property;
-        }
-        return $properties;
     }
 }

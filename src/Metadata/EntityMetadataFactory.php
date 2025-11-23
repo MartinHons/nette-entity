@@ -6,6 +6,7 @@ namespace MartinHons\NetteEntity\Entity\Metadata;
 
 use MartinHons\NetteEntity\Entity\Entity;
 use MartinHons\NetteEntity\Metadata\Reflection\EntityReflection;
+use MartinHons\NetteEntity\Metadata\Reflection\PropertyReflection;
 use MartinHons\NetteEntity\Metadata\Reflection\RepositoryReflection;
 use MartinHons\NetteEntity\Repository\IRepository;
 
@@ -19,7 +20,9 @@ class EntityMetadataFactory
 
         $entityReflection = new EntityReflection($entityClass);
         $tableName = $entityReflection->getTableName();
-        $properties = $entityReflection->getProperties();
+
+        $propertyReflection = new PropertyReflection($entityClass);
+        $properties = $propertyReflection->getProperties();
 
         return new EntityMetadata($tableName, $entityClass, $properties);
     }
